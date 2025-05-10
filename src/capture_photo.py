@@ -37,7 +37,7 @@ s3.upload_file(path, BUCKET, filename)
 # Wait for file to upload
 time.sleep(10)
 
-# POST JSON nody to Flask route
+# POST JSON body to Flask route
 try:
     requests.post(API_URL, json={"object_key": filename})
 except Exception as e:
